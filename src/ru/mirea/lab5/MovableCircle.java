@@ -5,12 +5,8 @@ public class MovableCircle implements Movable {
     MovablePoint center;//Speed - скорость
 
     public MovableCircle(int x, int y, int xSpeed, int ySpeed, int radius) {
-        centre = new MovablePoint();
-        this.x = x;
-        this.y = y;
-        this.xSpeed = xSpeed;
-        this.ySpeed = ySpeed;
-        this.radius = radius;
+        centre = new MovablePoint(int x, int y, int xSpeed, int ySpeed, int radius);
+    
     }
 
     public void moveUp() {
